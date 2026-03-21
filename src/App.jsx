@@ -1,5 +1,5 @@
 import './App.css'
-import Header from './components/layout/Header'
+import Hero from './components/sections/Hero'
 import About from './components/sections/About'
 import Skill from './components/sections/Skill'
 import Project from './components/sections/Project'
@@ -10,7 +10,7 @@ function App() {
 
   return (
     <>
-      <Header />
+      <Hero />
       <About />
       <Skill />
       <Project />
