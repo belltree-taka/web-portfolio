@@ -6,6 +6,7 @@ const Hero = () => {
     <>
       <Header/>
       <div>Hero</div>
+      
     </>
     
   )
