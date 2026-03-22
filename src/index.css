@@ -29,6 +29,7 @@
     --text-h4: 1rem; /* 16px */
     --text-h4-md: 1.125rem; /* 18px */
     --text-body: 1rem; /* 16px */
+    --text-mobile-nav: 1.25rem; /* 20px */
 
     /* Line Height */
     --leading-tightest: 1;
@@ -100,6 +101,12 @@
         font-size: 0.875rem;
         font-weight: 500;
         letter-spacing: var(--tracking-wide);
+        line-height: var(--leading-relaxed);
+    }
+
+    .text-mobile-nav{
+        font-size: var(--text-mobile-nav);
+        font-weight: 600;
         line-height: var(--leading-relaxed);
     }
 
