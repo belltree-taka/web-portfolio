@@ -110,6 +110,12 @@
         line-height: var(--leading-relaxed);
     }
 
+    .text-footer-site-title{
+        font-size: var(--text-h1);
+        font-weight: 700;
+        line-height: var(--leading-tight);
+    }
+
     @media (min-width: 768px){
 
         .text-h1{
