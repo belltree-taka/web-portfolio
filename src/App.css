@@ -1,0 +1,24 @@
+/*===============================
+    @keyframes
+================================*/
+
+@keyframes GradationAnimation{
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+
+/*===============================
+    TailWind CSS Settings
+================================*/
+
+@layer components{
+    .header-gradient-bg{
+        background: linear-gradient(45deg, #6cb8ff, #fff66c, #ffa36c);
+        background-size: 600% 600%;
+        animation: GradationAnimation 5s ease infinite;
+    }
+    .text-animation{
+        animation: TextAnimation 0.75s ease-in;
+    }
+}
