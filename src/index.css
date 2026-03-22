@@ -52,7 +52,7 @@
     @layer
 ================================*/
 
-@layer components{
+@layer utilities{
     /* Font Components */
     .text-impact{
         font-size: var(--text-impact);
