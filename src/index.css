@@ -19,7 +19,7 @@
 @theme {
     --font-sans: 'Albert Sans', system-ui, sans-serif;
     /* Font Size */
-    --text-impact: clamp(3rem, 6vw, 4.5rem); /* 48px → 72px */
+    --text-impact: clamp(3.5rem, 9vw, 7rem); /* 56px → 112px */
     --text-h1: 1.875rem; /* 30px */
     --text-h1-md: 2.25rem; /* 36px */
     --text-h2: 1.5rem; /* 24px */
@@ -29,6 +29,7 @@
     --text-h4: 1rem; /* 16px */
     --text-h4-md: 1.125rem; /* 18px */
     --text-body: 1rem; /* 16px */
+    --text-mobile-nav: 1.25rem; /* 20px */
 
     /* Line Height */
     --leading-tightest: 1;
@@ -101,6 +102,18 @@
         font-weight: 500;
         letter-spacing: var(--tracking-wide);
         line-height: var(--leading-relaxed);
+    }
+
+    .text-mobile-nav{
+        font-size: var(--text-mobile-nav);
+        font-weight: 600;
+        line-height: var(--leading-relaxed);
+    }
+
+    .text-footer-site-title{
+        font-size: var(--text-h1);
+        font-weight: 700;
+        line-height: var(--leading-tight);
     }
 
     @media (min-width: 768px){
