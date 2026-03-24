@@ -43,9 +43,12 @@
     --tracking-wide: 0.025em;
 
     /* Spacing System */
-    --spacing-section-sm: 4rem; /* 64px */
+    --spacing-section-sm: 2rem; /* 32px */
+    --spacing-section-md: 4rem; /* 64px */
     --spacing-section-lg: 6rem; /* 96px */
 
+    /* Breakpoint Only For Portrait Image in About Section */
+    --breakpoint-desktop: 1152px;
 }
 
 /*===============================
@@ -142,8 +145,15 @@
     }
     @media (min-width: 768px){
         .section-y-spacing{
+            padding-top: var(--spacing-section-md);
+            padding-bottom: var(--spacing-section-md);
+        }
+    }
+    @media (min-width: 1024px){
+        .section-y-spacing{
             padding-top: var(--spacing-section-lg);
             padding-bottom: var(--spacing-section-lg);
         }
     }
+
 }

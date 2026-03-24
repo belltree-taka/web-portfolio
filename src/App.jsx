@@ -35,8 +35,8 @@ function App() {
       <Header isMobileNavOpen={isMobileNavOpen} mobileNavClickHandler={mobileNavClickHandler}/>
       <Hero/>
       <About />
-      <Skill />
       <Project />
+      <Skill />
       <Contact />
       <Footer />
     </>
