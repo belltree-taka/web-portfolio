@@ -1,0 +1,72 @@
+import shopifyProjectThumb from '../assets/images/shopify-project-thumb.avif'
+import wordPressProjectThumb from '../assets/images/wordpress-project-thumb.avif'
+import webPortfolioProjectThumb from '../assets/images/web-portfolio-project-thumb.avif'
+import intrinsicWebDesignProjectThumb from '../assets/images/intrinsic-web-design-project-thumb.avif'
+
+
+const projects = [
+    {
+        id: 'shopify',
+        title: 'Shopify Development',
+        thumb: shopifyProjectThumb,
+        overview: [
+            'This freelance project involves customizing a Shopify storefront based on the Savor theme, primarily using the Theme Editor to design and structure pages.',
+            'To meet client requirements, I extended the default theme with custom CSS and JavaScript, modifying the navigation layout and adjusting the display of third-party app components.',
+            'I also organized nearly 200 menu items by combining metafields and collections, enabling efficient content management and structured data usage.',
+            'The project is currently in progress. You can view the development site using the password below.',
+            'Password: &0@FuUmX4x51'
+        ],
+
+        liveUrl: 'https://nomiya-dev.myshopify.com',
+
+        techStack: [
+            'Shopify (Liquid, Theme Editor)',
+            'Custom CSS & JavaScript',
+            'Metafields & Collections',
+            'Third-party app customization'
+        ],
+
+        insights: [
+            'Learned how to structure and manage large-scale menu data using Shopify metafields and collections.',
+            'Gained experience customizing a default Shopify theme to meet specific client requirements.',
+            'Improved ability to adjust navigation and UI components for better clarity and usability.',
+            'Developed a deeper understanding of working within platform constraints while extending functionality with CSS and JavaScript.'
+        ]
+    },
+
+    {
+        id: 'wordpress',
+        title: 'WordPress Development',
+        thumb: wordPressProjectThumb,
+        overview: [
+            'wordpress overview para1',
+            'wordpress overview para2',
+        ],
+        liveUrl: 'https://example.com',
+        techStack: ['wordpress', 'VS Code'],
+        insights: ['Insight1', 'Insight2']
+    },
+
+    {
+        id: 'portfolio',
+        title: 'Web Portfolio Development',
+        thumb: webPortfolioProjectThumb,
+        overview: [],
+        liveUrl: '',
+        techStack: [],
+        insights: []
+    },
+
+    {
+        id: 'intrinsic',
+        title: 'Intrinsic Web Design Development',
+        thumb: intrinsicWebDesignProjectThumb,
+        overview: [],
+        liveUrl: '',
+        techStack: [],
+        insights: []
+    },
+
+];
+
+export default projects

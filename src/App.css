@@ -1,4 +1,13 @@
 /*===============================
+    daisyUI Modification
+================================*/
+.hover-3d > :first-child::before {
+        opacity: 0;
+        background-image: none;
+        transition: none;
+}
+
+/*===============================
     @keyframes
 ================================*/
 
