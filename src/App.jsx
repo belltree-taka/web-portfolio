@@ -38,15 +38,26 @@ function App() {
     setIsMobileNavOpen(prev => !prev);
   }
 
+  const linkClickHandler = (e, targetId) => {
+        e.preventDefault();
+        const target = document.querySelector(targetId);
+        if (target) {
+        target.scrollIntoView({
+            behavior: "smooth",
+            block: "start",
+        });
+        }
+  }
+
   return (
     <>
-      <Header isMobileNavOpen={isMobileNavOpen} mobileNavClickHandler={mobileNavClickHandler} setIsMobileNavOpen={setIsMobileNavOpen}/>
-      <Hero/>
+      <Header isMobileNavOpen={isMobileNavOpen} mobileNavClickHandler={mobileNavClickHandler} setIsMobileNavOpen={setIsMobileNavOpen} linkClickHandler={linkClickHandler} />
+      <Hero />
       <About />
       <Project />
       <Skill />
       <Contact />
-      <Footer />
+      <Footer linkClickHandler={linkClickHandler} />
     </>
   )
 }

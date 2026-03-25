@@ -1,6 +1,4 @@
-import linkClickHandler from "../parts/linkClickHandler";
-
-const DesktopNav = () => {
+const DesktopNav = ({linkClickHandler}) => {
     return (
         <nav className="absolute top-16 inset-x-0 w-full max-w-6xl mx-auto z-10">
             <ul className="flex justify-around">

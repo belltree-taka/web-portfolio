@@ -1,6 +1,4 @@
-import linkClickHandler from "../parts/linkClickHandler";
-
-const Footer = () => {
+const Footer = ({linkClickHandler}) => {
 
   return (
     <footer className="bg-sky-950 flex flex-col gap-8 section-y-spacing">
