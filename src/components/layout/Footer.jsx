@@ -1,4 +1,7 @@
+import linkClickHandler from "../parts/linkClickHandler";
+
 const Footer = () => {
+
   return (
     <footer className="bg-sky-950 flex flex-col gap-8 section-y-spacing">
       <a className="self-center" href="/" aria-label="Back to top page">
@@ -31,10 +34,10 @@ const Footer = () => {
       </div>
       <nav className="mx-auto">
         <ul className="flex flex-wrap justify-center gap-x-8 gap-y-4">
-            <li><a className="text-sky-100" href="#about">About</a></li>
-            <li><a className="text-sky-100" href="#projects">Projects</a></li>
-            <li><a className="text-sky-100" href="#skills">Skills</a></li>
-            <li><a className="text-sky-100" href="#contact">Contact</a></li>
+            <li><a className="text-sky-100" href="#about" onClick={(e) => linkClickHandler(e, "#about")}>About</a></li>
+            <li><a className="text-sky-100" href="#projects" onClick={(e) => linkClickHandler(e, "#projects")}>Projects</a></li>
+            <li><a className="text-sky-100" href="#skills" onClick={(e) => linkClickHandler(e, "#skills")}>Skills</a></li>
+            <li><a className="text-sky-100" href="#contact" onClick={(e) => linkClickHandler(e, "#contact")}>Contact</a></li>
         </ul>
       </nav>
       <p className="text-ui text-center">© {new Date().getFullYear()} Takaharu Suzuki. All rights reserved.</p>
