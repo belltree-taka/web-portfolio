@@ -1,4 +1,3 @@
-import Header from '../layout/Header'
 import ScrollDownArrow from '../ui/ScrollDownArrow'
 
 const Hero = () => {

@@ -6,6 +6,7 @@ import Skill from './components/sections/Skill'
 import Project from './components/sections/Project'
 import Contact from './components/sections/Contact'
 import Footer from './components/layout/Footer'
+import BackToTopBtn from './components/ui/BackToTopBtn'
 import { useState, useEffect } from 'react'
 
 function App() {
@@ -26,19 +27,39 @@ function App() {
     return () => mediaQuery.removeEventListener('change', handleMediaChange);
   }, []);
   
+  useEffect(() => {
+    if(!isMobileNavOpen){
+      document.body.style.position = 'static';
+    }else{
+      document.body.style.position = 'fixed';
+    }
+  },[isMobileNavOpen])
+
   const mobileNavClickHandler = () => {
     setIsMobileNavOpen(prev => !prev);
   }
 
+  const linkClickHandler = (e, targetId) => {
+        e.preventDefault();
+        const target = document.querySelector(targetId);
+        if (target) {
+        target.scrollIntoView({
+            behavior: "smooth",
+            block: "start",
+        });
+        }
+  }
+
   return (
     <>
-      <Header isMobileNavOpen={isMobileNavOpen} mobileNavClickHandler={mobileNavClickHandler}/>
-      <Hero/>
+      <Header isMobileNavOpen={isMobileNavOpen} mobileNavClickHandler={mobileNavClickHandler} setIsMobileNavOpen={setIsMobileNavOpen} linkClickHandler={linkClickHandler} />
+      <Hero />
       <About />
       <Project />
       <Skill />
       <Contact />
-      <Footer />
+      <Footer linkClickHandler={linkClickHandler} />
+      <BackToTopBtn />
     </>
   )
 }

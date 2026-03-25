@@ -3,7 +3,7 @@ import MobileNavToggleBtn from '../ui/MobileNavToggleBtn';
 import DesktopNav from '../ui/DesktopNav';
 import { useEffect, useState } from 'react';
 
-const Header = ({isMobileNavOpen, mobileNavClickHandler}) => {
+const Header = ({isMobileNavOpen, setIsMobileNavOpen, mobileNavClickHandler, linkClickHandler}) => {
   const [isDesktop, setIsDesktop] = useState(() => window.matchMedia('(min-width: 1024px)').matches);
 
   useEffect(() => {
@@ -22,11 +22,11 @@ const Header = ({isMobileNavOpen, mobileNavClickHandler}) => {
     <>
       <header className="relative">
           {isDesktop ? (
-            <DesktopNav/>
+            <DesktopNav linkClickHandler={linkClickHandler}/>
           ) : (
             <>
               {!isMobileNavOpen && <MobileNavToggleBtn mobileNavClickHandler={mobileNavClickHandler}/>}
-              {isMobileNavOpen && <MobileNav mobileNavClickHandler={mobileNavClickHandler}/>}
+              {isMobileNavOpen && <MobileNav setIsMobileNavOpen={setIsMobileNavOpen} mobileNavClickHandler={mobileNavClickHandler}/>}
             </>
           )}
       </header>
