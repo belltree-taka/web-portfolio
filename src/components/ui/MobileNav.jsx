@@ -24,7 +24,7 @@ const MobileNav = ({setIsMobileNavOpen, mobileNavClickHandler}) => {
     };
     
     return (
-        <div className={`fixed overscroll-contain bg-sky-950/95 inset-0 z-10 flex flex-col justify-center items-center transition-all duration-300 ${isClosing ? "opacity-0 " : "opacity-100"}`}>
+        <div className={`fixed overscroll-contain bg-sky-950/95 backdrop-blur-sm inset-0 z-10 flex flex-col justify-center items-center transition-all duration-300 ${isClosing ? "opacity-0 " : "opacity-100"}`}>
             <MobileNavCloseBtn mobileNavClickHandler={mobileNavClickHandler}/>
             <nav className="-translate-y-6">
                 <ul className="flex flex-col justify-center items-center gap-6">
