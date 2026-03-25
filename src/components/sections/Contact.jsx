@@ -36,13 +36,13 @@ function Contact() {
       form,
       import.meta.env.VITE_EMAILJS_PUBLIC_KEY
     )
-      .then(() => {
-        setStatus('success')
-        setForm({ user_name: '', user_email: '', message: '' })
-      })
-      .catch(() => {
-        setStatus('error')
-      })
+    .then(() => {
+      setStatus('success')
+      setForm({ user_name: '', user_email: '', message: '' })
+    })
+    .catch(() => {
+      setStatus('error')
+    })
   }
 
   return (

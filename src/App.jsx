@@ -6,6 +6,7 @@ import Skill from './components/sections/Skill'
 import Project from './components/sections/Project'
 import Contact from './components/sections/Contact'
 import Footer from './components/layout/Footer'
+import BackToTopBtn from './components/ui/BackToTopBtn'
 import { useState, useEffect } from 'react'
 
 function App() {
@@ -58,6 +59,7 @@ function App() {
       <Skill />
       <Contact />
       <Footer linkClickHandler={linkClickHandler} />
+      <BackToTopBtn />
     </>
   )
 }

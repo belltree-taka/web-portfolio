@@ -1,4 +1,5 @@
-const Form = ({form, handleChange, handleSubmit}) => {
+const Form = ({form, handleChange, handleSubmit }) => {
+    
     return (
         <form onSubmit={handleSubmit} className="space-y-6 w-full">
 
