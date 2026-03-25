@@ -32,7 +32,7 @@ const Contact = () => {
   }
 
   return (
-    <section className="section-y-spacing bg-sky-900 text-sky-100">
+    <section id="contact" className="section-y-spacing bg-sky-900 text-sky-100">
       <div className="px-4 md:flex md:flex-col md:items-center max-w-xl mx-auto pb-8 md:pb-0">
 
         <h2 className="uppercase text-h2 border-l-4 border-l-sky-400 ps-3">

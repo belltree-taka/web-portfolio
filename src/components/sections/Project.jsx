@@ -3,10 +3,9 @@ import { useState } from "react"
 
 const Project = () => {
   const [activeProject, setActiveProject] = useState(projects[0]);
-  console.log(activeProject);
   
   return (
-    <section className="section-y-spacing bg-sky-900 text-sky-100">
+    <section id="projects" className="section-y-spacing bg-sky-900 text-sky-100">
       <div className="px-4 md:flex md:flex-col md:items-center">
         <h2 className="text-h2 uppercase border-l-4 border-l-sky-400 ps-3">Projects</h2>
         <p className="py-6 max-w-prose md:text-center mb-4 md:mb-8 lg:mb-12">Selected work that reflects my approach to building digital experiences, where design and functionality work seamlessly together.</p>

@@ -26,13 +26,21 @@ function App() {
     return () => mediaQuery.removeEventListener('change', handleMediaChange);
   }, []);
   
+  useEffect(() => {
+    if(!isMobileNavOpen){
+      document.body.style.position = 'static';
+    }else{
+      document.body.style.position = 'fixed';
+    }
+  },[isMobileNavOpen])
+
   const mobileNavClickHandler = () => {
     setIsMobileNavOpen(prev => !prev);
   }
 
   return (
     <>
-      <Header isMobileNavOpen={isMobileNavOpen} mobileNavClickHandler={mobileNavClickHandler}/>
+      <Header isMobileNavOpen={isMobileNavOpen} mobileNavClickHandler={mobileNavClickHandler} setIsMobileNavOpen={setIsMobileNavOpen}/>
       <Hero/>
       <About />
       <Project />

@@ -5,7 +5,7 @@ const Skill = () => {
   ));
 
   return (
-    <section className="section-y-spacing bg-sky-950 text-sky-100">
+    <section id="skills" className="section-y-spacing bg-sky-950 text-sky-100">
       <div className="px-4 md:flex md:flex-col md:items-center">
         <h2 className="text-h2 uppercase border-l-4 border-l-sky-400 ps-3">Skills</h2>
         <p className="py-6 max-w-prose md:text-center mb-4 md:mb-8 lg:mb-12">The tools and technologies I use to solve complex problems and create meaningful, user-focused web experiences, with an emphasis on usability, performance, and thoughtful implementation.</p>

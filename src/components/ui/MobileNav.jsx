@@ -1,15 +1,37 @@
 import MobileNavCloseBtn from "./MobileNavCloseBtn"
+import { useState } from 'react'
 
-const MobileNav = ({mobileNavClickHandler}) => {
+const MobileNav = ({setIsMobileNavOpen, mobileNavClickHandler}) => {
+    const [isClosing, setIsClosing] = useState(false);
+
+    const mobileNavLinkHandelr = (e, targetId) => {
+    e.preventDefault();
+    
+    setIsClosing(true);
+
+    setTimeout(() => {
+        setIsClosing(false);
+        setIsMobileNavOpen(false);
+        document.body.style.position = 'static';
+        const target = document.querySelector(targetId);
+        if (target) {
+            target.scrollIntoView({
+                behavior: "smooth",
+                block: "start",
+            });
+        }
+    }, 300);
+    };
+    
     return (
-        <div className="fixed inset-0 bg-sky-950 z-10 flex flex-col justify-center items-center">
+        <div className={`fixed overscroll-contain bg-sky-950/95 inset-0 z-10 flex flex-col justify-center items-center transition-all duration-300 ${isClosing ? "opacity-0 " : "opacity-100"}`}>
             <MobileNavCloseBtn mobileNavClickHandler={mobileNavClickHandler}/>
             <nav className="-translate-y-6">
                 <ul className="flex flex-col justify-center items-center gap-6">
-                <li><a className="text-mobile-nav" href="#about">About</a></li>
-                <li><a className="text-mobile-nav" href="#projects">Projects</a></li>
-                <li><a className="text-mobile-nav" href="#skills">Skills</a></li>
-                <li><a className="text-mobile-nav" href="#contact">Contact</a></li>
+                <li><a className="text-mobile-nav after:content-[''] after:block after:w-0 after:h-1 after:bg-sky-400 after:mt-1 after:transition-all after:delay-150 after:duration-300 hover:after:w-4/5" href="#about" onClick={(e) => mobileNavLinkHandelr(e, "#about")}>About</a></li>
+                <li><a className="text-mobile-nav after:content-[''] after:block after:w-0 after:h-1 after:bg-sky-400 after:mt-1 after:transition-all after:delay-150 after:duration-300 hover:after:w-4/5" href="#projects" onClick={(e) => mobileNavLinkHandelr(e, "#projects")}>Projects</a></li>
+                <li><a className="text-mobile-nav after:content-[''] after:block after:w-0 after:h-1 after:bg-sky-400 after:mt-1 after:transition-all after:delay-150 after:duration-300 hover:after:w-4/5" href="#skills" onClick={(e) => mobileNavLinkHandelr(e, "#skills")}>Skills</a></li>
+                <li><a className="text-mobile-nav after:content-[''] after:block after:w-0 after:h-1 after:bg-sky-400 after:mt-1 after:transition-all after:delay-150 after:duration-300 hover:after:w-4/5" href="#contact" onClick={(e) => mobileNavLinkHandelr(e, "#contact")}>Contact</a></li>
                 </ul>
             </nav>
         </div>
