@@ -8,10 +8,10 @@ const Project = () => {
     <section id="projects" className="section-y-spacing bg-sky-900 text-sky-100">
       <div className="px-4 md:flex md:flex-col md:items-center">
         <h2 className="text-h2 uppercase border-l-4 border-l-sky-400 ps-3">Projects</h2>
-        <p className="py-6 max-w-prose md:text-center mb-4 md:mb-8 lg:mb-12">Selected work that reflects my approach to building digital experiences, where design and functionality work seamlessly together.</p>
+        <p className="py-6 max-w-prose md:text-center mb-4 md:mb-8 lg:mb-12">Selected work that reflects my approach to building digital experiences, where design and functionality work seamlessly together. Click a project card to see more. Details will appear below as you explore.</p>
       </div>
 
-      <div className="px-4 mb-8">
+      <div className="px-4 mb-8 md:mb-12 lg:mb-16">
         <div className="carousel carousel-center rounded-box w-full max-w-6xl mx-auto space-x-4 p-8 flex bg-sky-700">
           {projects.map((project) => (
             <div

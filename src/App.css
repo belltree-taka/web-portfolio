@@ -1,5 +1,8 @@
 /*===============================
     daisyUI Modification
+
+    This removes the default
+    spotlight effect
 ================================*/
 .hover-3d > :first-child::before {
         opacity: 0;
@@ -11,10 +14,15 @@
     @keyframes
 ================================*/
 
-@keyframes GradationAnimation{
+@keyframes gradationAnimation{
     0%{background-position:0% 50%}
     50%{background-position:100% 50%}
     100%{background-position:0% 50%}
+}
+
+@keyframes fadeIn {
+    0%{opacity: 0; transform: translateY(0); transform: scale(1.1);}
+    100%{opacity: 1; transform: translateY(12px); transform: scale(1);}
 }
 
 /*===============================
@@ -25,9 +33,10 @@
     .header-gradient-bg{
         background: linear-gradient(45deg, #6cb8ff, #fff66c, #ffa36c);
         background-size: 600% 600%;
-        animation: GradationAnimation 5s ease infinite;
+        animation: gradationAnimation 5s ease infinite;
     }
-    .text-animation{
-        animation: TextAnimation 0.75s ease-in;
+    .fade-in{
+        animation: fadeIn 1.5s ease-out forwards;
     }
 }
+
