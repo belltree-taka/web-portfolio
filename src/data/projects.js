@@ -1,6 +1,5 @@
 import shopifyProjectThumb from '../assets/images/shopify-project-thumb.avif'
-import wordPressProjectThumb from '../assets/images/wordpress-project-thumb.avif'
-import webPortfolioProjectThumb from '../assets/images/web-portfolio-project-thumb.avif'
+import webTypographyAssignmentThumb from '../assets/images/web-typography-assignment.avif'
 import intrinsicWebDesignProjectThumb from '../assets/images/intrinsic-web-design-project-thumb.avif'
 
 
@@ -35,22 +34,22 @@ const projects = [
     },
 
     {
-        id: 'wordpress',
-        title: 'WordPress Development',
-        thumb: wordPressProjectThumb,
+        id: 'intrinsic',
+        title: 'Intrinsic Web Design Development',
+        thumb: intrinsicWebDesignProjectThumb,
         overview: [
-            'wordpress overview para1',
-            'wordpress overview para2',
+            '',
+            '',
         ],
         liveUrl: 'https://example.com',
-        techStack: ['wordpress', 'VS Code'],
-        insights: ['Insight1', 'Insight2']
+        techStack: [],
+        insights: []
     },
 
     {
-        id: 'portfolio',
-        title: 'Web Portfolio Development',
-        thumb: webPortfolioProjectThumb,
+        id: 'web-typography',
+        title: '',
+        thumb: webTypographyAssignmentThumb,
         overview: [],
         liveUrl: '',
         techStack: [],
