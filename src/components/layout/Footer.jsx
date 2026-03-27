@@ -1,7 +1,7 @@
 const Footer = ({linkClickHandler}) => {
 
   return (
-    <footer className="bg-sky-950 flex flex-col gap-8 section-y-spacing">
+    <footer className="bg-sky-900 flex flex-col gap-8 section-y-spacing">
       <a className="self-center" href="/" aria-label="Back to top page">
         <h2 className="flex gap-2">
           <svg className="min-w-16 w-16" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 322.6 269.4">
@@ -10,7 +10,7 @@ const Footer = ({linkClickHandler}) => {
           </svg>
           <div>
             <p className="text-sky-100 text-footer-site-title whitespace-nowrap -mb-2">Takaharu Suzuki</p>
-            <p className="text-body-bold text-sky-400">Front-End Developer</p>
+            <p className="text-body-bold text-sky-400">Front-end Developer</p>
           </div>
         </h2>
       </a>
@@ -35,6 +35,7 @@ const Footer = ({linkClickHandler}) => {
             <li><a className="text-sky-100" href="#about" onClick={(e) => linkClickHandler(e, "#about")}>About</a></li>
             <li><a className="text-sky-100" href="#projects" onClick={(e) => linkClickHandler(e, "#projects")}>Projects</a></li>
             <li><a className="text-sky-100" href="#skills" onClick={(e) => linkClickHandler(e, "#skills")}>Skills</a></li>
+            <li><a className="text-sky-100" href="#skills" onClick={(e) => linkClickHandler(e, "#beyond-the-screen")}>Beyond The Screen</a></li>
             <li><a className="text-sky-100" href="#contact" onClick={(e) => linkClickHandler(e, "#contact")}>Contact</a></li>
         </ul>
       </nav>

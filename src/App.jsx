@@ -2,8 +2,9 @@ import './App.css'
 import Header from './components/layout/Header'
 import Hero from './components/sections/Hero'
 import About from './components/sections/About'
-import Skill from './components/sections/Skill'
 import Project from './components/sections/Project'
+import Skill from './components/sections/Skill'
+import BeyondTheScreen from './components/sections/BeyondTheScreen'
 import Contact from './components/sections/Contact'
 import Footer from './components/layout/Footer'
 import BackToTopBtn from './components/ui/BackToTopBtn'
@@ -57,6 +58,7 @@ function App() {
       <About />
       <Project />
       <Skill />
+      <BeyondTheScreen />
       <Contact />
       <Footer linkClickHandler={linkClickHandler} />
       <BackToTopBtn />

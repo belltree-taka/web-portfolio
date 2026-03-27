@@ -31,6 +31,7 @@ const MobileNav = ({setIsMobileNavOpen, mobileNavClickHandler}) => {
                 <li><a className="text-mobile-nav after:content-[''] after:block after:w-0 after:h-1 after:bg-sky-400 after:mt-1 after:transition-all after:delay-150 after:duration-300 hover:after:w-4/5" href="#about" onClick={(e) => mobileNavLinkHandler(e, "#about")}>About</a></li>
                 <li><a className="text-mobile-nav after:content-[''] after:block after:w-0 after:h-1 after:bg-sky-400 after:mt-1 after:transition-all after:delay-150 after:duration-300 hover:after:w-4/5" href="#projects" onClick={(e) => mobileNavLinkHandler(e, "#projects")}>Projects</a></li>
                 <li><a className="text-mobile-nav after:content-[''] after:block after:w-0 after:h-1 after:bg-sky-400 after:mt-1 after:transition-all after:delay-150 after:duration-300 hover:after:w-4/5" href="#skills" onClick={(e) => mobileNavLinkHandler(e, "#skills")}>Skills</a></li>
+                <li><a className="text-mobile-nav after:content-[''] after:block after:w-0 after:h-1 after:bg-sky-400 after:mt-1 after:transition-all after:delay-150 after:duration-300 hover:after:w-4/5" href="#skills" onClick={(e) => mobileNavLinkHandler(e, "#beyond-the-screen")}>Beyond The Screen</a></li>
                 <li><a className="text-mobile-nav after:content-[''] after:block after:w-0 after:h-1 after:bg-sky-400 after:mt-1 after:transition-all after:delay-150 after:duration-300 hover:after:w-4/5" href="#contact" onClick={(e) => mobileNavLinkHandler(e, "#contact")}>Contact</a></li>
                 </ul>
             </nav>

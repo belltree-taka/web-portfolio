@@ -14,14 +14,15 @@ const About = () => {
               type="image/avif"
             />
             <img
-              className="min-h-96 object-cover rounded-l-2xl desktop:rounded-2xl w-2/3 lg:w-3/5"
+              className="min-h-96 object-cover rounded-l-2xl min-[1152px]:rounded-2xl w-2/3 lg:w-3/5"
               src={portraitMd}
               srcSet={`${portraitSm} 640w, ${portraitMd} 768w`}
               alt="Takaharu Suzuki Portrait Photo"
             />
           </picture>
-          <div className="border-l-4 border-l-sky-400 text-sky-100 ps-3 absolute left-4 top-1/2 md:left-12 lg:left-20 lg:top-1/8">
+          <div className="border-l-4 border-l-sky-400 text-sky-100 ps-3 absolute left-4 top-1/2 md:left-12 md:top-2/5 lg:left-20 lg:top-1/8">
             <p className="font-bold text-2xl md:text-3xl mb-4 uppercase">Hello I'm</p>
+            <p className="font-bold uppercase text-sky-400 md:text-xl">Front-End Developer</p>
             <h2 className="text-impact uppercase">
               <span className="block">Takaharu</span>
               <span className="block">Suzuki</span>
@@ -31,11 +32,11 @@ const About = () => {
       </div>
       <div className="pr-4 max-w-6xl mx-auto md:-mb-24 md:h-138 lg:h-68">
         <div className="bg-sky-100 text-sky-950 px-4 py-6 rounded-r-2xl max-w-prose md:relative md:-top-34 lg:max-w-xl lg:-top-110 lg:left-20 lg:rounded-2xl">
-          <p className="mb-4">I am a Front-End Developer based in Edmonton, Alberta. I've been drawn to geometric art since I was young. Even in the middle of everyday chaos, I've always found beauty in structure and order.</p>
+          <p className="mb-4">I am a front-end developer based in Edmonton, Alberta. I've been drawn to geometric art since I was young. Even in the middle of everyday chaos, I've always found beauty in structure and order.</p>
           <p className="mb-4">Through studying design and UX principles at NAIT, I came to understand that web design is built on that same foundation. What I once thought was just talent or intuition is actually supported by clear principles. Learning design theory, especially CRAP (Contrast, Repetition, Alignment, Proximity), helped me understand how visual communication really works.</p>
           <p className="mb-4">I see programming in a similar way. It follows rules and logic, but when everything fits together, it becomes something creative. That connection between design and structure is what makes web development so interesting to me.</p>
           <p className="mb-4">Outside of coding, I sometimes notice patterns in unexpected places. My cat, Misty, has an “M” shape on her forehead. It is just a natural marking, but I like to think of it as a small piece of intentional design.</p>
-          <p className="mb-4">And yes, I love cats so much that I actually overcame my cat allergy.</p>
+          <p className="mb-4">And yes, I love cats so much that I actually overcame my cat allergy!</p>
           <p className="mb-8">I enjoy building things where structure and creativity exist together. Let's connect and build something that works as beautifully as it looks.</p>
           <svg className="w-36 ml-auto" viewBox="0 0 1433.05 356.52">
             <title>Takaharu's Signature</title>
