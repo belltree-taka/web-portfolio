@@ -53,9 +53,24 @@ function Contact() {
           Contact
         </h2>
 
-        <p className="py-6 max-w-prose md:text-center mb-4 md:mb-8 lg:mb-12">
+        <p className="pt-6 max-w-prose md:text-center mb-4 md:mb-8 lg:mb-12">
           If you have a project in mind or just want to say hello, don't hesitate to get in touch. I'm always open to new opportunities and collaborations, and I'd be happy to hear about your ideas.
         </p>
+
+        <div className="flex flex-col items-start gap-2 w-full mb-8">
+          <div className="flex gap-2">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-6">
+              <path strokeLinecap="round" strokeLinejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75" />
+            </svg>
+            <a className="w-full" href="mailto:contact@takaharusuzuki.ca">contact@takaharusuzuki.ca</a>
+          </div>
+          <div className="flex gap-2">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-6">
+              <path strokeLinecap="round" strokeLinejoin="round" d="M10.5 1.5H8.25A2.25 2.25 0 0 0 6 3.75v16.5a2.25 2.25 0 0 0 2.25 2.25h7.5A2.25 2.25 0 0 0 18 20.25V3.75a2.25 2.25 0 0 0-2.25-2.25H13.5m-3 0V3h3V1.5m-3 0h3m-3 18.75h3" />
+            </svg>
+            <a className="w-full" href="tel:7802208940">780-220-8940</a>
+          </div>
+        </div>
 
         {status === 'success' ? 
           <FormSuccess />

@@ -1,6 +1,7 @@
 import shopifyProjectThumb from '../assets/images/shopify-project-thumb.avif'
 import webTypographyAssignmentThumb from '../assets/images/web-typography-assignment.avif'
 import intrinsicWebDesignProjectThumb from '../assets/images/intrinsic-web-design-project-thumb.avif'
+import freelancePosterProjectsThumb from '../assets/images/freelance-poster-projects-thumb.avif'
 
 
 const projects = [
@@ -41,27 +42,27 @@ const projects = [
             '',
             '',
         ],
-        liveUrl: 'https://example.com',
+        liveUrl: 'https://intrinsic-web-design-project.netlify.app/',
         techStack: [],
         insights: []
     },
 
     {
         id: 'web-typography',
-        title: '',
+        title: 'Web Typography Development',
         thumb: webTypographyAssignmentThumb,
         overview: [],
-        liveUrl: '',
+        liveUrl: 'https://web-typography-project.netlify.app/',
         techStack: [],
         insights: []
     },
 
     {
-        id: 'intrinsic',
-        title: 'Intrinsic Web Design Development',
-        thumb: intrinsicWebDesignProjectThumb,
+        id: 'freelance-poster',
+        title: 'Poster Design',
+        thumb: freelancePosterProjectsThumb,
         overview: [],
-        liveUrl: '',
+        liveUrl: 'https://visual-promotional-design-gallery.netlify.app/',
         techStack: [],
         insights: []
     },
