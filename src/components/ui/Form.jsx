@@ -1,7 +1,7 @@
 const Form = ({form, handleChange, handleSubmit }) => {
     
     return (
-        <form onSubmit={handleSubmit} className="space-y-6 w-full">
+        <form onSubmit={handleSubmit} className="space-y-6 w-full max-w-lg mx-auto">
 
             <div>
                 <label className="text-ui block mb-2">Your Name</label>

@@ -46,8 +46,8 @@ function Contact() {
   }
 
   return (
-    <section id="contact" className="section-y-spacing bg-sky-900 text-sky-100">
-      <div className="px-4 md:flex md:flex-col md:items-center max-w-xl mx-auto pb-8 md:pb-0">
+    <section id="contact" className="section-y-spacing bg-sky-950 text-sky-100">
+      <div className="px-4 md:flex md:flex-col md:items-center max-w-6xl md: mx-auto pb-8 md:pb-0">
 
         <h2 className="uppercase text-h2 border-l-4 border-l-sky-400 ps-3">
           Contact
@@ -57,7 +57,7 @@ function Contact() {
           If you have a project in mind or just want to say hello, don't hesitate to get in touch. I'm always open to new opportunities and collaborations, and I'd be happy to hear about your ideas.
         </p>
 
-        <div className="flex flex-col items-start gap-2 w-full mb-8">
+        <div className="flex flex-col items-start gap-2 w-full mb-8 md:max-w-lg">
           <div className="flex gap-2">
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-6">
               <path strokeLinecap="round" strokeLinejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75" />
@@ -71,7 +71,7 @@ function Contact() {
             <a className="w-full" href="tel:7802208940">780-220-8940</a>
           </div>
         </div>
-
+        <p className="text-2xl mb-8 text-center"> - or -</p>
         {status === 'success' ? 
           <FormSuccess />
         : status === 'error' ? 
