@@ -22,6 +22,7 @@ Select a project card to explore further and see details appear below.</p>
             >
               <img
               src={project.thumb}
+              alt={`Thumbnail image of ${project.title}`}
               className="rounded-2xl" />
             </div>
           ))}
@@ -52,7 +53,7 @@ Select a project card to explore further and see details appear below.</p>
                   <img
                     className="w-full object-contain rounded-2xl lg:order-2"
                     src={activeProject.screenshot}
-                    alt=""
+                    alt={`Image sample of ${activeProject.title}`}
                   />
                 )}
 
@@ -67,6 +68,7 @@ Select a project card to explore further and see details appear below.</p>
 
           <div className="grid md:grid-cols-2 md:gap-8">
             <div>
+              {activeProject.liveUrl ? 
               <section className="mb-8">
                 <h3 className="inline-block text-h3 mb-6 after:content-[''] after:block after:w-4/5 after:h-1 after:bg-sky-400 after:mt-1">Live Site</h3>
                 {activeProject.liveUrl && (
@@ -74,7 +76,9 @@ Select a project card to explore further and see details appear below.</p>
                       {activeProject.liveUrl}
                     </a>
                 )}
-              </section>
+              </section> : ''
+              }
+              
               <section className="mb-8">
                 <h3 className="inline-block text-h3 mb-6 after:content-[''] after:block after:w-4/5 after:h-1 after:bg-sky-400 after:mt-1">Tech Stack</h3>
                 <ul>

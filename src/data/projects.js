@@ -6,6 +6,8 @@ import shopifyProjectScreenshot from '../assets/images/shopify-project-screensho
 import intrinsicWebDesignProjectScreenshot from '../assets/images/intrinsic-web-design-project-screenshot.mp4'
 import webTypographyAssignmentScreenshot from '../assets/images/web-typography-assignment-screenshot.avif'
 import freelancePosterProjectsScreenshot from '../assets/images/freelance-poser-projects-screenshot.avif'
+import wordPressProjectThumb from '../assets/images/wordpress-project-thumb.avif'
+import wordPressProjectScreenshot from '../assets/images/wordpress-project-screenshot.avif'
 
 const projects = [
     {
@@ -38,6 +40,42 @@ const projects = [
             'Customized a default Shopify theme to meet specific client requirements ',
             'Improved navigation and UI clarity for better usability',
             'Gained experience working within platform constraints while extending functionality'
+        ]
+    },
+    {
+        id: 'wordpress',
+        title: 'WordPress Development',
+        thumb: wordPressProjectThumb,
+        mediaType: 'image',
+        screenshot: wordPressProjectScreenshot,
+        overview: [
+            'This capstone project at NAIT involved designing and developing a new website for a real liquor store as part of a three-person team, consisting of a team leader, designer, and developer.',
+            'We built a fully custom WordPress hybrid theme from scratch, utilizing PHP, SCSS, and JavaScript. The goal was to build a website that is easy to manage, flexible for future updates, and simple for users to navigate.',
+            'Our team managed the entire project lifecycle, including client requirement gathering, mood board creation, low- and high-fidelity wireframes in Figma, and user testing. This process ensured that design decisions were grounded in both user experience and client goals.',
+            'For development, we used Local App for local development and GitHub for version control, enabling efficient collaboration and code management throughout the project.',
+            'We also enhanced functionality using WordPress plugins such as Forminator, Popup Box, UpdraftPlus, and Yoast SEO, balancing custom development with practical solutions.',
+            'The project was successfully deployed to a live hosting environment, and the final result met client expectations, providing a fully functional and professional website.'
+        ],
+
+        liveUrl: '',
+
+        techStack: [
+            'WordPress (Hybrid Theme Development)',
+            'PHP',
+            'SCSS / CSS',
+            'JavaScript',
+            'WordPress Plugins (Forminator, Popup Box, UpdraftPlus, Yoast SEO)',
+            'GitHub (Version Control)',
+            'Figma (UI/UX Design, Wireframing)',
+            'Local (Development Environment)',
+            'Hosting & Deployment'
+        ],
+
+        insights: [
+            'Learned effective team collaboration using GitHub for version control and code management',
+            'Gained hands-on experience in the full website development lifecycle, from client communication to deployment',
+            'Balanced custom theme development with strategic use of plugins to extend functionality',
+            'Improved understanding of scalable WordPress architecture and maintainable code structure'
         ]
     },
 

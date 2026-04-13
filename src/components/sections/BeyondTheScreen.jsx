@@ -25,7 +25,7 @@ const BeyondTheScreen = () => {
                 </div>
                 
                 <div className="rounded-2xl">
-                    <img className="w-full rounded-2xl object-contain" src={hobbyProject} alt="" />
+                    <img className="w-full rounded-2xl object-contain" src={hobbyProject} alt="Image of Raspberry Pi" />
                 </div>
             </div>
             </section>
