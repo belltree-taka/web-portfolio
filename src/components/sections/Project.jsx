@@ -31,7 +31,7 @@ Select a project card to explore further and see details appear below.</p>
 
       <div className="pl-4 lg:pr-4">
         <section className="bg-sky-100 text-sky-950 px-4 py-6 md:px-8 md:py-12 max-w-6xl rounded-l-2xl ml-auto lg:mx-auto lg:rounded-2xl">
-          <h3 className="text-4xl font-bold mb-8">{activeProject.title}</h3>
+          <h3 className="text-4xl font-bold mb-8 break-all">{activeProject.title}</h3>
           <section className="mb-8">
               <h3 className="inline-block text-h3 mb-6 after:content-[''] after:block after:w-4/5 after:h-1 after:bg-sky-400 after:mt-1">
                 Project Overview

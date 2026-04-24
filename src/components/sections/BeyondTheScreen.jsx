@@ -11,7 +11,7 @@ const BeyondTheScreen = () => {
 
             <div className="grid md:grid-cols-2 gap-8 items-stretch px-4 md:px-8 max-w-6xl mx-auto">
                 <div className="lg:pt-18">
-                    <span className="text-rotate font-bold text-6xl md:text-8xl lg:text-9xl mb-6">
+                    <span className="text-rotate font-bold text-2xl md:text-8xl lg:text-9xl mb-6">
                         <span>
                             <span>Try.</span>
                             <span>Get Stuck.</span>

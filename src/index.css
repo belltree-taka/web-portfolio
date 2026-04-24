@@ -19,7 +19,7 @@
 @theme {
     --font-sans: 'Albert Sans', system-ui, sans-serif;
     /* Font Size */
-    --text-impact: clamp(3.5rem, 9vw, 7rem); /* 56px → 112px */
+    --text-impact: clamp(3rem, 9vw, 7rem); /* 48px → 112px */
     --text-h1: 1.875rem; /* 30px */
     --text-h1-md: 2.25rem; /* 36px */
     --text-h2: 1.5rem; /* 24px */
