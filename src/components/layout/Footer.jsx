@@ -1,7 +1,7 @@
 const Footer = ({linkClickHandler}) => {
 
   return (
-    <footer className="bg-sky-900 flex flex-col gap-8 section-y-spacing">
+    <footer className="bg-sky-900 flex flex-col gap-8 section-y-spacing overflow-hidden">
       <a className="self-center" href="/" aria-label="Back to top page">
         <h2 className="flex gap-2">
           <svg className="min-w-16 w-16" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 322.6 269.4">
