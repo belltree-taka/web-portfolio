@@ -14,10 +14,6 @@ const Hero = () => {
             <span className="block text-sm mb-8">Front-end Developer</span>
             <span className="block text-base mb-24">Portfolio</span>
           </h1>
-
-          {/* <h1 className="text-sky-950 text-h1 uppercase">Takaharu Suzuki</h1>
-          <p className="text-sky-950 text-body-bold uppercase mb-6">Front-end Developer</p>
-          <p className="text-sky-950 text-body-bold mb-24">Portfolio</p> */}
         </div>
         <ScrollDownArrow />
       </section>
