@@ -59,7 +59,7 @@ function App() {
       <Project />
       <Skill />
       <BeyondTheScreen />
-      <Contact />
+      {/* <Contact /> */}
       <Footer linkClickHandler={linkClickHandler} />
       <BackToTopBtn />
     </>
