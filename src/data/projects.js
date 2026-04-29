@@ -22,11 +22,9 @@ const projects = [
             'Since this was my first time working with Shopify, I independently learned Liquid and JSON template files while developing the project. One of the biggest challenges was structuring nearly 200 menu items with complex conditions, such as pickup-only items and dinner-exclusive menus.',
             'To solve this, I designed a data structure using metafields and collections, and created a custom CSV import workflow to efficiently manage large-scale menu data.',
             'Although the final delivery is scheduled alongside a major rebranding update, the site itself has been completed and has received positive feedback from the client.',
-            'You can view the development site using the password below.',
-            'Password: &0@FuUmX4x51'
         ],
 
-        liveUrl: 'https://nomiya-dev.myshopify.com',
+        liveUrl: '',
 
         techStack: [
             'Shopify (Liquid, JSON Templates, Theme Editor)',
