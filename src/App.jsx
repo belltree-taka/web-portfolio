@@ -54,7 +54,7 @@ function App() {
   return (
     <>
       <Header isMobileNavOpen={isMobileNavOpen} mobileNavClickHandler={mobileNavClickHandler} setIsMobileNavOpen={setIsMobileNavOpen} linkClickHandler={linkClickHandler} />
-      <Hero />
+      {/* <Hero /> */}
       <About />
       <Project />
       <Skill />
